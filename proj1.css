@@ -272,7 +272,21 @@ footer {
         width: 100%;
         font-size: 40px;
     }
+footer{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    border-radius: 0;
+}
+.footer_logo{
+    display: flex;
+    justify-content: top;
+    justify-content: right;
+    width: 150px;
 
+}
 }
 @media (min-width:1020px){
     .container{
@@ -298,5 +312,20 @@ footer {
     }
     .explore_menu_text{
         font-size: 50px;
+    }
+    footer{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-around;
+        border-radius: 0;
+    }
+    .footer_logo{
+        display: flex;
+        justify-content: top;
+        justify-content: right;
+        width: 150px;
+    
     }
 }
