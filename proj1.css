@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box; /*changing default "content-box" to "border-box" model of the browser*/
 }
+/*Global*/
 body{
     font-family:'Merriweather', serif;
     background-color: #ebf2ff;
@@ -38,9 +39,13 @@ body{
     border: 2px solid blue;
 }
 .container{
+    align-items: center;
     max-width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+}
+.hero_container{
+    background-color: #ebf2ff;
 }
 .hero_image_container{
     width: 100%;
@@ -48,11 +53,11 @@ body{
 .hero_image{
     box-shadow: darkgray;
     border-radius: 20px;
-    width:100%;
+    width: 100%;
 }
 .hero_txt{
     font-size: 30px;
-    margin:20px 0;
+    margin: 20px 0;
 }
 .explore_menu_text{
     font-size: 30px;
@@ -82,11 +87,11 @@ body{
     width: 100%;
 }
 .food_image{
-    width:100%;
+    width: 100%;
     border-radius: 8px 8px 0 0;
 }
 .food_card_description{
-    padding:15px;
+    padding: 15px;
 }
 .restaurant_text{
     font-size: 30px;
@@ -119,6 +124,97 @@ body{
     width: 100%;
     height: 100%;
 }
+.contact_container{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact_container_text{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.contact_container_email{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#email_id{
+    margin-left: 3px;
+    border-radius: 7px;
+    font-size: 15px;
+    border: gray;
+    
+}
+.contact_container_button{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+      );
+      color: #fff;
+      border: none;
+      padding: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+}
+.quote__container {
+    position: relative;
+    margin-top: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      center center / cover no-repeat;
+  }
+  .quote_image_overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote_image_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+  }
+footer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+  }
+  
+  footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+  
+  footer > ul {
+    margin-top: -1rem;
+    color: #fff;
+  }
+  
+  footer > ul > li {
+    margin: 5px 0;
+  }
 
 @media (min-width:768px){
     .navbar{
@@ -176,6 +272,7 @@ body{
         width: 100%;
         font-size: 40px;
     }
+
 }
 @media (min-width:1020px){
     .container{
